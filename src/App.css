@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#root {
+  max-width: 1280px;
+  text-align: center;
+  background-color: #213547;
+  margin: 0 auto;
+  user-select: text;
+  cursor: text;
+}
+.logo {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo::selection {
+  background-color: #2b3e63;
+}
+h2::selection {
+  background-color: #2b3e63;
+}
+.read-the-docs::selection {
+  background-color: #2b3e63;
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.read-the-docs {
+  color: #acacac;
+  z-index: 2;
+  font-size: 2rem;
+}
