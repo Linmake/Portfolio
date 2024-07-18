@@ -1,18 +1,14 @@
 import './App.css'
-
+import Header from './components/Header'
+import Main from './components/Main'
 function App() {
-
   return (
     <>
       <div className='container'>
-        <h1 className='logo'>Nicole Figueroa</h1>
-        <h2>Diseñadora web & programadora</h2>
-        <p className="read-the-docs">
-          Portafolio en mantenimiento
-        </p>
+        <Header />
+        <Main />
       </div>
     </>
   )
 }
-
 export default App
