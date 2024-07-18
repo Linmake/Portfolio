@@ -1,18 +1,9 @@
-@font-face {
-  font-family: "Poppins";
-  src: url(/fonts/Poppins-Light.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 #root {
   max-width: 1280px;
   text-align: center;
-  background-color: #213547;
   margin: 0 auto;
   user-select: text;
   cursor: text;
-  font-family: "Poppins";
 }
 .logo::selection {
   background-color: #2b3e63;
@@ -23,13 +14,7 @@ h2::selection {
 .read-the-docs::selection {
   background-color: #2b3e63;
 }
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 .read-the-docs {
   color: #acacac;
-  z-index: 2;
   font-size: 2rem;
 }
