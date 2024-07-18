@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Poppins";
-  src: url(../public/fonts/Poppins-Light.ttf);
+  src: url(../public/fonts/Poppins-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 #root {
   max-width: 1280px;
@@ -10,9 +12,6 @@
   user-select: text;
   cursor: text;
   font-family: "Poppins";
-}
-.logo {
-  filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo::selection {
   background-color: #2b3e63;
