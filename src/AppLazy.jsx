@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
-import './style/loading.css'
+import './style/Loader.css'
 
 const AppLazy = React.lazy(() => import('./App'));
 
 const AppWrapper = () => {
   return (
-    <Suspense fallback={<span></span>}>
+    <Suspense fallback={<span className="loader"></span>}>
       <AppLazy />
     </Suspense>
   );
