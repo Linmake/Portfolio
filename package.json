@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "cpx \"public/icons/**/*\" \"dist/icons\"",
-    "build": "vite build",
+    "build": "vite build && cpx \"public/icons/**/*\" \"dist/icons\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
