@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <main>
       <p className="read-the-docs">
-        Portafolio en mantenimiento
+        Portafolio en mantenimiento.
       </p>
     </main>
   )
