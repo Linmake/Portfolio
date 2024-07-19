@@ -1,6 +1,6 @@
-h1::selection {
+.titulo::selection {
   background-color: #2b3e63;
 }
-h2::selection {
+.subtitulo::selection {
   background-color: #2b3e63;
 }
