@@ -1,6 +1,5 @@
-.titulo::selection {
-  background-color: #2b3e63;
-}
-.subtitulo::selection {
-  background-color: #2b3e63;
+header {
+  background-color: #2b3e6384;
+  height: 10vh;
+  width: 100%;
 }

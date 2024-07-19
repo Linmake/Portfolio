@@ -1,3 +1,10 @@
+.titulo::selection {
+  background-color: #2b3e63;
+}
+.subtitulo::selection {
+  background-color: #2b3e63;
+}
+
 .read-the-docs::selection {
   background-color: #2b3e63;
 }
