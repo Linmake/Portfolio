@@ -1,14 +1,10 @@
 #root {
-  max-width: 1280px;
   text-align: center;
   margin: 0;
   user-select: text;
   cursor: text;
   word-break: keep-all;
   word-wrap: break-word;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgba(127, 255, 212, 0.284);
 }
 
 .container {
@@ -16,9 +12,8 @@
   height: 80%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0.5rem;
-  background-color: rgba(240, 248, 255, 0.257);
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 480px) {
   body {
