@@ -1,14 +1,24 @@
-.titulo::selection {
+.title-content {
+  margin-top: 10%;
+  line-height: 0.5;
+}
+.titule {
+  font-size: 3rem;
+}
+.subtitle {
+  font-size: 3rem;
+}
+.titule::selection {
   background-color: #2b3e63;
 }
-.subtitulo::selection {
+.subtitle::selection {
   background-color: #2b3e63;
 }
-
 .read-the-docs::selection {
   background-color: #2b3e63;
 }
-.read-the-docs {
+.read-the-docs,
+.subtitle {
   color: #acacac;
-  font-size: 2rem;
+  font-size: 3rem;
 }
