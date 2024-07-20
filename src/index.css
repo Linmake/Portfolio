@@ -6,17 +6,27 @@
   font-display: swap;
 }
 :root {
+  box-sizing: border-box;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  --fz-xs: 20px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --dark-slate: #495670;
+  --navy: #0a192f;
 }
 
 body {
   margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #213547;
+  background-color: #0a192f;
   font-family: "Poppins";
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--navy);
 }
