@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <>
       <header>
-        <img src="../../public/assets/NF.png" className="logo" alt="" />
+        <img src="/assets/NF.png" className="logo" alt="logo" />
         <nav>
           <ol className="row-list">
             <li>
