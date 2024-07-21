@@ -3,11 +3,11 @@ export default function Header() {
   return (
     <>
       <header>
-        <img src="../../public/assets/NF.png" className="logo" alt="" />
+        <img src="/assets/NF.png" className="logo" alt="loco-principal" />
         <nav>
           <ol className="row-list">
             <li>
-              <a href="" className="link-page">
+              <a href="#" className="link-page">
                 <span className="li-span">01. </span>About
               </a>
             </li>
