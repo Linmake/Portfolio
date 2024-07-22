@@ -29,4 +29,10 @@ body {
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--dark-slate) var(--navy);
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
