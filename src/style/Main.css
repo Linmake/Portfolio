@@ -3,37 +3,24 @@ html {
   overflow: hidden;
 }
 @media (min-width: 1280px) {
-  .title-content {
-    margin-top: 14%;
-    margin-left: 5%;
+  .content {
+    margin: 5% 0;
     line-height: 0.5;
     overflow-x: hidden;
+    height: 100vh;
+    box-shadow: 0px -10px 0px 0px rgba(240, 248, 255, 0.076);
   }
-  .titule {
+  .title {
+    margin-top: 12%;
     font-size: 3rem;
     color: white;
   }
   .subtitle {
     font-size: 3rem;
-  }
-  .titule::selection {
-    background-color: #2b3e63;
-  }
-  .subtitle::selection {
-    background-color: #2b3e63;
-  }
-  .read-the-docs::selection {
-    background-color: #2b3e63;
-  }
-  .read-the-docs,
-  .subtitle {
     color: #acacac;
-    font-size: 3rem;
   }
-
   .animation,
   .animation_layer {
-    height: 70%;
     width: 100%;
     overflow-x: hidden;
     padding: 2rem;
@@ -50,6 +37,7 @@ html {
     background-position: bottom center;
     background-repeat: repeat-x;
     width: 100%;
+    height: auto;
     position: absolute;
   }
   .animation_layer.parallax {
@@ -65,8 +53,15 @@ html {
     width: 2rem;
     height: 2rem;
     top: 30%;
-    left: 60%;
+    left: 75%;
   }
+}
+
+.img {
+  position: relative;
+  margin-top: 16%;
+  margin-left: 60%;
+  scale: 65%;
 }
 
 @media (max-width: 480px) {
