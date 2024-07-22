@@ -1,33 +1,79 @@
-.title-content {
-  margin-top: 10%;
-  line-height: 0.5;
+body,
+html {
+  overflow: hidden;
 }
-.titule {
-  font-size: 3rem;
-  color: white;
-}
-.subtitle {
-  font-size: 3rem;
-}
-.titule::selection {
-  background-color: #2b3e63;
-}
-.subtitle::selection {
-  background-color: #2b3e63;
-}
-.read-the-docs::selection {
-  background-color: #2b3e63;
-}
-.read-the-docs,
-.subtitle {
-  color: #acacac;
-  font-size: 3rem;
+@media (min-width: 1280px) {
+  .title-content {
+    margin-top: 14%;
+    margin-left: 5%;
+    line-height: 0.5;
+    overflow-x: hidden;
+  }
+  .titule {
+    font-size: 3rem;
+    color: white;
+  }
+  .subtitle {
+    font-size: 3rem;
+  }
+  .titule::selection {
+    background-color: #2b3e63;
+  }
+  .subtitle::selection {
+    background-color: #2b3e63;
+  }
+  .read-the-docs::selection {
+    background-color: #2b3e63;
+  }
+  .read-the-docs,
+  .subtitle {
+    color: #acacac;
+    font-size: 3rem;
+  }
+
+  .animation,
+  .animation_layer {
+    height: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 2rem;
+  }
+
+  .animation {
+    display: block;
+    position: relative;
+    z-index: 10;
+    cursor: default;
+  }
+
+  .animation_layer {
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+  }
+  .animation_layer.parallax {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  #star {
+    background-image: url("/assets/Star.png");
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    top: 30%;
+    left: 60%;
+  }
 }
 
 @media (max-width: 480px) {
   .title-content {
     margin-top: 50%;
     line-height: 1;
+    overflow-x: hidden;
   }
   .titule {
     font-size: 2.5rem;
