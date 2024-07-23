@@ -2,7 +2,9 @@
   box-sizing: inherit;
 }
 header {
-  background-color: #284268;
+  background-image: url("../../public/assets/banner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: var(--nav-height);
   width: 100%;
   font-family: "SFMono";
