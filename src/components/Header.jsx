@@ -13,7 +13,7 @@ export default function Header() {
             </li>
             <li>
               <a href="" className="link-page">
-                <span className="li-span">02. </span>Work
+                <span className="li-span">02. </span>Proyects
               </a>
             </li>
             <li>
