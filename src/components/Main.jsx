@@ -23,9 +23,24 @@ export default function Main() {
         <Parallax pages={2} className="animation">
           <ParallaxLayer offset={0} speed={0.2}>
             <div className="animation_layer parallax">
-              <h1 className="title">Nicole Figueroa</h1>
-              <h2 className="subtitle">Diseñadora web & programadora.</h2>
-              <br />
+              <div id="content-1">
+                <div id="intro-content">
+                  <div id="welcome-content">
+                    <h3>Bienvenido a mi Portafolio</h3>
+                  </div>
+                  <div id="title-content">
+                    <h1 className="title">Hola soy Nicole Web </h1>
+                    <h2 className="title">Developer</h2>
+                  </div>
+                </div>
+                <div id="portImageCont">
+                  <img id="astro" src="../../public/assets/astro.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={0.2}>
+            <div id="content-2">
               <animated.img
                 ref={ref}
                 src="/assets/foto.png"
@@ -35,11 +50,8 @@ export default function Main() {
               />
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.2}>
-            <div className="animation_layer parallax" id="star"></div>
-          </ParallaxLayer>
         </Parallax>
       </div>
-    </main>
+    </main >
   );
 }
