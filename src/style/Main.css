@@ -12,6 +12,9 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  margin: 0;
+}
 body,
 html {
   overflow: hidden;
@@ -57,13 +60,32 @@ html {
   }
 
   #content-1 {
-    background: linear-gradient(to right, #4c90e5, #3ebdc2);
+    background-image: url("../../public/assets/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position-y: 79%;
+    background-position-x: center;
+    background-attachment: scroll;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     padding-left: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    top: 0;
+    left: 0;
+  }
+  #content-2 {
+    background: linear-gradient(#09132c, #2c2e5f);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
+    top: -21%;
+    left: 0;
+    position: absolute;
   }
   #content-2 {
     width: 100vw;
@@ -71,18 +93,42 @@ html {
     padding-top: 5rem;
     display: flex;
     align-items: flex-end;
+    margin-top: 0;
+    top: -21%;
+    left: 0;
+    position: absolute;
   }
   #intro-content {
-    border: 1px solid black;
     height: fit-content;
-    padding: 1rem;
     line-height: 15px;
+    margin-top: 10%;
   }
-  #title-content #welcome-content {
-    border: 1px solid black;
+  #portImageCont {
+    margin-top: 8%;
+    margin-right: 8%;
+  }
+  #welcome-content {
+    background: linear-gradient(
+      90.21deg,
+      rgba(170, 54, 124, 0.5) -5.91%,
+      rgba(74, 47, 189, 0.5) 111.58%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
     width: fit-content;
     font-family: "Poppins";
     padding: 5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+  #about-content {
+    border: 1px solid white;
+    background-color: rgba(240, 248, 255, 0.312);
+    padding: 1rem;
+    height: 35%;
+    width: 30%;
   }
 }
 
