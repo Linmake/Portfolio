@@ -5,9 +5,16 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "SFMonoBold";
+  src: url(/fonts/SFMonoBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   box-sizing: border-box;
-  color-scheme: light dark;
+  color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,15 +22,15 @@
   --nav-height: 100px;
   --nav-scroll-height: 70px;
   --dark-slate: #495670;
-  --navy: #0a192f;
+  --font-poppins: "Poppins";
+  --font-sfmonobold: "SFMonoBold";
 }
 
 body {
   margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0a192f;
-  font-family: "Poppins";
+  background-color: #f0f4f6;
 }
 
 html {
