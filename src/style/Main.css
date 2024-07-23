@@ -1,10 +1,23 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFMonoBold";
+  src: url(../../public/fonts/SFMonoBold.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body,
 html {
   overflow: hidden;
 }
 @media (min-width: 1280px) {
   .content {
-    margin: 5% 0;
     line-height: 0.5;
     overflow-x: hidden;
     height: 100vh;
@@ -14,16 +27,12 @@ html {
     margin-top: 12%;
     font-size: 3rem;
     color: white;
-  }
-  .subtitle {
-    font-size: 3rem;
-    color: #acacac;
+    font-family: "SFMonoBold";
   }
   .animation,
   .animation_layer {
     width: 100%;
     overflow-x: hidden;
-    padding: 2rem;
   }
 
   .animation {
@@ -34,12 +43,12 @@ html {
   }
 
   .animation_layer {
-    background-position: bottom center;
     background-repeat: repeat-x;
     width: 100%;
     height: auto;
     position: absolute;
   }
+
   .animation_layer.parallax {
     position: fixed;
     display: flex;
@@ -47,21 +56,46 @@ html {
     overflow-x: hidden;
   }
 
-  #star {
-    background-image: url("/assets/Star.png");
-    background-size: cover;
-    width: 2rem;
-    height: 2rem;
-    top: 30%;
-    left: 75%;
+  #content-1 {
+    background: linear-gradient(to right, #4c90e5, #3ebdc2);
+    width: 100vw;
+    height: 100vh;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #content-2 {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  #intro-content {
+    border: 1px solid black;
+    height: fit-content;
+    padding: 1rem;
+    line-height: 15px;
+  }
+  #title-content #welcome-content {
+    border: 1px solid black;
+    width: fit-content;
+    font-family: "Poppins";
+    padding: 5px;
   }
 }
 
 .img {
   position: relative;
-  margin-top: 16%;
-  margin-left: 60%;
-  scale: 65%;
+  top: 30%;
+  left: 30%;
+  scale: 20%;
+  margin: 0 auto;
+  border: 2px solid gray;
+}
+
+#astro {
 }
 
 @media (max-width: 480px) {

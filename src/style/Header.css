@@ -2,24 +2,21 @@
   box-sizing: inherit;
 }
 header {
-  background-color: #2b3e6384;
+  background-color: #284268;
   height: var(--nav-height);
   width: 100%;
-  margin: 0;
   font-family: "SFMono";
   font-size: var(--fz-xs);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   top: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   pointer-events: auto !important;
   user-select: auto !important;
   unicode-bidi: isolate;
   padding-left: 50px;
   padding-right: 50px;
-  z-index: 1000;
 }
 
 nav {
@@ -61,6 +58,4 @@ nav {
 .logo {
   width: 62px;
   height: 72px;
-}
-.menu {
 }
