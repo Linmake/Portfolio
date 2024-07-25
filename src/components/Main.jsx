@@ -45,7 +45,7 @@ export default function Main() {
                 </div>
                 <img
                   data-main-image
-                  src="/assets/me.webp"
+                  src=""
                   alt="img of desert"
                   className="me-img"
                   style={styles}
@@ -56,39 +56,63 @@ export default function Main() {
           <ParallaxLayer offset={2} speed={0.2}>
             <div id="content-3">
               <div className="card-proyect-content">
-                <img></img>
+                <div className="image-card">
+                  <img
+                    src=""
+                    alt=""
+                    className="proyect-img"
+                  ></img>
+                </div>
                 <div className="info-card">
                   <div className="tecnology-content">
                     <div className="tecnology" id="tec1">React</div>
                     <div className="tecnology" id="tec1">Node</div>
                     <div className="tecnology" id="tec1">Mongo</div>
                   </div>
-                  <h1>Notes</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  <div className="text-content">
+                    <h3 className="title-proyect">Notes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  </div>
                 </div>
               </div>
               <div className="card-proyect-content">
-                <img></img>
+                <div className="image-card">
+                  <img
+                    src=""
+                    alt=""
+                    className="proyect-img"
+                  ></img>
+                </div>
                 <div className="info-card">
                   <div className="tecnology-content">
                     <div className="tecnology" id="tec1">React</div>
                     <div className="tecnology" id="tec1">Node</div>
                     <div className="tecnology" id="tec1">Mongo</div>
                   </div>
-                  <h1>Notes</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  <div className="text-content">
+                    <h3 className="title-proyect">Notes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  </div>
                 </div>
               </div>
               <div className="card-proyect-content">
-                <img></img>
+                <div className="image-card">
+                  <img
+                    src=""
+                    alt=""
+                    className="proyect-img"
+                  ></img>
+                </div>
                 <div className="info-card">
                   <div className="tecnology-content">
                     <div className="tecnology" id="tec1">React</div>
                     <div className="tecnology" id="tec1">Node</div>
                     <div className="tecnology" id="tec1">Mongo</div>
                   </div>
-                  <h1>Notes</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  <div className="text-content">
+                    <h3 className="title-proyect">Notes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  </div>
                 </div>
               </div>
             </div>
