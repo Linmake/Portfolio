@@ -45,7 +45,7 @@ export default function Main() {
                 </div>
                 <img
                   data-main-image
-                  src="/assets/me.jpg"
+                  src="/assets/me.webp"
                   alt="img of desert"
                   className="me-img"
                   style={styles}
