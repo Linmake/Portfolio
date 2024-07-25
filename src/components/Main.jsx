@@ -10,17 +10,14 @@ export default function Main() {
   });
 
   const styles = useSpring({
-    transform: inView
-      ? 'scale(1)'
-      : 'scale(0.93)',
-    opacity: inView ? 1 : 0.35,
+    width: inView ? `960px` : `860px`,
     config: { duration: 1500 },
   });
 
   return (
     <main>
-      <div className="title-content">
-        <Parallax pages={2} className="animation">
+      <div className="content">
+        <Parallax pages={3} className="animation">
           <ParallaxLayer offset={0} speed={0.2}>
             <div className="animation_layer parallax">
               <div id="content-1">
@@ -41,21 +38,47 @@ export default function Main() {
           </ParallaxLayer>
           <ParallaxLayer offset={1} speed={0.2}>
             <div id="content-2">
-              <div id="about-content">
-                <h1>About Me</h1>
-                <p></p>
-                <animated.img
-                  ref={ref}
+              <animated.div id="about-content" ref={ref}>
+                <div id="text-about-content">
+                  <h1 id="about-h1"> <span className="num-parallax">01.</span> About me</h1>
+                  <p id="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque, id quia quidem perferendis est consequuntur quaerat adipisci eum et voluptatem vitae quis blanditiis nulla quisquam, sunt reiciendis nihil placeat.</p>
+                </div>
+                <img
+                  data-main-image
                   src="/assets/me.jpg"
                   alt="img of desert"
-                  className="img"
+                  className="me-img"
                   style={styles}
                 />
-              </div>
+              </animated.div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.2}>
+          <ParallaxLayer offset={2} speed={0.2}>
             <div id="content-3">
+              <div className="card-proyect-content">
+                <img></img>
+                <div className="info-card">
+                  <div className="tecnology-content">
+                    <div className="tecnology" id="tec1">React</div>
+                    <div className="tecnology" id="tec1">Node</div>
+                    <div className="tecnology" id="tec1">Mongo</div>
+                  </div>
+                  <h1>Notes</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                </div>
+              </div>
+              <div className="card-proyect-content">
+                <img></img>
+                <div className="info-card">
+                  <div className="tecnology-content">
+                    <div className="tecnology" id="tec1">React</div>
+                    <div className="tecnology" id="tec1">Node</div>
+                    <div className="tecnology" id="tec1">Mongo</div>
+                  </div>
+                  <h1>Notes</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                </div>
+              </div>
               <div className="card-proyect-content">
                 <img></img>
                 <div className="info-card">
