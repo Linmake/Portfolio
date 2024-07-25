@@ -158,11 +158,47 @@ html {
   }
   .card-proyect-content {
     width: 20%;
+    height: 660px;
     border: 1px solid white;
     color: white;
     font-family: "Poppins";
+    margin-right: 30px;
+    border-radius: 4px;
+  }
+  .info-card {
+    margin: 33px 30px;
+  }
+  .image-card {
+    width: 100%;
+    height: 280px;
+    background-color: aliceblue;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-proyect {
+    margin: 0px 0px 10px;
+    padding: 14px 0px 0px;
+    font-size: 25px;
+    font-family: "Poppins", "Open Sans", "Helvetica Neue", sans-serif;
   }
   .num-parallax {
+    color: #64ffda;
+    font-family: "SFMonoRegular";
+  }
+  .tecnology-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .tecnology {
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    background-color: #64ffda;
+    border-radius: 3px;
+    padding: 3px 10px;
   }
 }
 
