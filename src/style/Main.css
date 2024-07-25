@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "SFMonoRegular";
+  src: url(../../public/fonts/SFMonoRegular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
 }
@@ -21,9 +28,12 @@ html {
 }
 @media (min-width: 1280px) {
   .content {
+    height: 4000px;
+  }
+  .title-content {
     line-height: 0.5;
     overflow-x: hidden;
-    height: 100vh;
+    height: 4000px;
     box-shadow: 0px -10px 0px 0px rgba(240, 248, 255, 0.076);
   }
   .title {
@@ -36,6 +46,7 @@ html {
   .animation_layer {
     width: 100%;
     overflow-x: hidden;
+    height: 4000px;
   }
 
   .animation {
@@ -48,12 +59,12 @@ html {
   .animation_layer {
     background-repeat: repeat-x;
     width: 100%;
-    height: auto;
+    height: 4000px;
     position: absolute;
   }
 
   .animation_layer.parallax {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -74,29 +85,24 @@ html {
     justify-content: space-between;
     top: 0;
     left: 0;
+    overflow-y: hidden;
   }
   #content-2 {
-    background: linear-gradient(#09132c, #2c2e5f);
+    position: absolute;
     width: 100vw;
     height: 100vh;
-    padding-top: 5rem;
+    justify-content: center;
     display: flex;
-    align-items: flex-end;
-    margin-top: 0;
-    top: -21%;
-    left: 0;
-    position: absolute;
+    top: 0;
   }
-  #content-2 {
+  #content-3 {
+    position: absolute;
+    background-color: black;
     width: 100vw;
     height: 100vh;
-    padding-top: 5rem;
     display: flex;
-    align-items: flex-end;
-    margin-top: 0;
-    top: -21%;
-    left: 0;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
   }
   #intro-content {
     height: fit-content;
@@ -125,23 +131,39 @@ html {
   }
   #about-content {
     border: 1px solid white;
+    border-radius: 10px;
     background-color: rgba(240, 248, 255, 0.312);
     padding: 1rem;
-    height: 35%;
-    width: 30%;
+    color: white;
+    font-family: "Poppins";
+    display: flex;
+    width: 50%;
+    height: 50%;
   }
-}
-
-.img {
-  position: relative;
-  top: 30%;
-  left: 30%;
-  scale: 20%;
-  margin: 0 auto;
-  border: 2px solid gray;
-}
-
-#astro {
+  #text-about-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+  }
+  .me-img {
+    scale: 70%;
+  }
+  #about-h1 {
+    margin-bottom: 2rem;
+  }
+  #about-p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  .card-proyect-content {
+    width: 20%;
+    border: 1px solid white;
+    color: white;
+    font-family: "Poppins";
+  }
+  .num-parallax {
+  }
 }
 
 @media (max-width: 480px) {
