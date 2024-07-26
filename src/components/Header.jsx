@@ -1,8 +1,15 @@
 import '../style/Header.css'
-export default function Header() {
+
+export default function Header({ scrollY }) {
+
+  const headerStyle = {
+    backgroundColor: scrollY > 50 ? 'rgba(0, 0, 0, 0.8)' : 'transparent',
+    transition: 'background-color 0.3s ease',
+  };
+
   return (
     <>
-      <header>
+      <header style={headerStyle} >
         <img src="/assets/NF.webp" className="logo" alt="loco-principal" />
         <nav>
           <ol className="row-list">

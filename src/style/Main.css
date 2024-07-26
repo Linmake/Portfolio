@@ -29,14 +29,15 @@
 * {
   margin: 0;
 }
-body,
-html {
+
+body {
   overflow: hidden;
 }
+
+main {
+  margin-top: 60px; /* Ajusta este valor según la altura del header */
+}
 @media (min-width: 1280px) {
-  .content {
-    height: 4000px;
-  }
   .title-content {
     line-height: 0.5;
     overflow-x: hidden;
@@ -61,13 +62,15 @@ html {
     position: relative;
     z-index: 10;
     cursor: default;
+    overflow: visible; /* Cambia de hidden a visible */
   }
 
   .animation_layer {
-    background-repeat: repeat-x;
     width: 100%;
-    height: 4000px;
-    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .animation_layer.parallax {

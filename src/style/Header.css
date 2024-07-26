@@ -19,13 +19,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 0;
   backdrop-filter: blur(20px);
   pointer-events: auto !important;
   user-select: auto !important;
   unicode-bidi: isolate;
   padding-left: 50px;
   padding-right: 50px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-image: none;
+  padding: 0px 0;
+  background-color: #121212c7;
 }
 
 nav {
