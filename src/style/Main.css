@@ -1,31 +1,27 @@
 @font-face {
   font-family: "SFMonoRegular";
-  src: url("https://nicolefigueroa.com/fonts/SF/SFMonoRegular.otf")
-    format("opentype");
+  src: url("/fonts/SF/SFMonoRegular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SFMonoBold";
-  src: url("https://nicolefigueroa.com/fonts/SF/SFMonoBold.otf")
-    format("opentype");
+  src: url("/fonts/SF/SFMonoBold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("https://nicolefigueroa.com/fonts/Poppins/Poppins-Light.ttf")
-    format("truetype");
+  src: url("/fonts/Poppins/Poppins-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PoppinsBold";
-  src: url("https://nicolefigueroa.com/fonts/Poppins/Poppins-Bold.ttf")
-    format("truetype");
+  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -121,7 +117,7 @@ html {
   #intro-content {
     height: fit-content;
     line-height: 15px;
-    margin-top: 11%;
+    margin-top: 14%;
   }
   #portImageCont {
     margin-top: 8%;
@@ -150,12 +146,13 @@ html {
     color: white;
     font-family: "Poppins";
     display: flex;
-    width: 50%;
-    height: 50%;
-    margin: 4% auto;
+    width: 60%;
+    height: 60%;
+    margin: 2% auto;
     backdrop-filter: blur(20px);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.6);
     -moz-osx-font-smoothing: grayscale;
+    z-index: 3;
   }
   #text-about-content {
     display: flex;
@@ -172,6 +169,9 @@ html {
   #about-p {
     line-height: 1.8;
     font-size: 1.1rem;
+  }
+  #sharp {
+    z-index: -1;
   }
   .card-proyect-content {
     width: 20%;
