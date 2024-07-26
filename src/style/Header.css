@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "SFMonoRegular";
+  src: url(/fonts/SF/SFMonoRegular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: inherit;
 }
@@ -7,7 +14,7 @@ header {
   background-repeat: no-repeat;
   height: var(--nav-height);
   width: 100%;
-  font-family: var(--font-SFMonoRegular);
+  font-family: "SFMonoRegular";
   font-size: var(--fz-xs);
   display: flex;
   align-items: center;

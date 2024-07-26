@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "SFMonoRegular";
+  src: url(/fonts/SF/SFMonoRegular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins/Poppins-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url(/fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
 }
@@ -178,7 +199,7 @@ html {
   }
   .num-parallax {
     color: #64ffda;
-    font-family: var(--font-SFMonoRegular);
+    font-family: "SFMonoRegular";
   }
   .tecnology-content {
     display: flex;
