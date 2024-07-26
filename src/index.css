@@ -15,9 +15,6 @@
   --nav-height: 100px;
   --nav-scroll-height: 70px;
   --dark-slate: #495670;
-  --font-Poppins: "Poppins";
-  --font-SFMonoBold: "SFMonoBold";
-  --font-SFMonoRegular: "SFMonoRegular";
 }
 
 body {
@@ -25,7 +22,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #121212;
-  font-family: SFMonoBold;
+  font-family: "SFMonoBold";
 }
 
 html {
