@@ -33,7 +33,7 @@ export default function Main() {
                   </div>
                 </div>
                 <div id="portImageCont">
-                  <img id="astro" src="../../public/assets/header-img.svg" alt="" />
+                  <img id="astro" src="assets/header-img.svg" alt="" />
                 </div>
               </div>
             </div>

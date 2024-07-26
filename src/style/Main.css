@@ -50,7 +50,7 @@ html {
   }
 
   #content-1 {
-    background-image: url("../../public/assets/banner-bg.png");
+    background-image: url("/assets/banner-bg.png");
     background-repeat: no-repeat;
     background-position-y: 79%;
     background-position-x: center;
