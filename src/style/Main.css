@@ -1,27 +1,31 @@
 @font-face {
   font-family: "SFMonoRegular";
-  src: url("/fonts/SF/SFMonoRegular.otf") format("opentype");
+  src: url("https://nicolefigueroa.com/fonts/SF/SFMonoRegular.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SFMonoBold";
-  src: url("/fonts/SF/SFMonoBold.otf") format("opentype");
+  src: url("https://nicolefigueroa.com/fonts/SF/SFMonoBold.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  src: url("https://nicolefigueroa.com/fonts/Poppins/Poppins-Light.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PoppinsBold";
-  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  src: url("https://nicolefigueroa.com/fonts/Poppins/Poppins-Bold.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
