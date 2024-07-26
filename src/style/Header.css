@@ -2,12 +2,12 @@
   box-sizing: inherit;
 }
 header {
-  background-image: url("../../public/assets/banner-bg.png");
+  background-image: url("/assets/banner-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: var(--nav-height);
   width: 100%;
-  font-family: "SFMono";
+  font-family: var(--font-SFMonoRegular);
   font-size: var(--fz-xs);
   display: flex;
   align-items: center;
