@@ -4,14 +4,16 @@ import { useInView } from 'react-intersection-observer';
 import '../style/Main.css';
 
 export default function Main() {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Ejecutar solo una vez
-    threshold: 0.35, // Umbral de visibilidad
+  // Configuración del hook useInView
+  const { ref: refAbout, inView: inViewAbout } = useInView({
+    triggerOnce: false,
+    threshold: 0.40,
   });
 
-  const styles = useSpring({
-    width: inView ? `960px` : `860px`,
-    config: { duration: 1500 },
+  // Animación de escala
+  const AboutAnimationStyle = useSpring({
+    transform: inViewAbout ? 'scale(1)' : 'scale(0.97)',
+    config: { duration: 850 },
   });
 
   return (
@@ -37,21 +39,18 @@ export default function Main() {
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={1} speed={0.2}>
-            <div id="content-2">
-              <animated.div id="about-content" ref={ref}>
-                <div id="text-about-content">
-                  <h1 id="about-h1"> <span className="num-parallax">01.</span> About me</h1>
-                  <p id="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque, id quia quidem perferendis est consequuntur quaerat adipisci eum et voluptatem vitae quis blanditiis nulla quisquam, sunt reiciendis nihil placeat.</p>
-                </div>
-                <img
-                  data-main-image
-                  src=""
-                  alt="img of desert"
-                  className="me-img"
-                  style={styles}
-                />
-              </animated.div>
-            </div>
+            <animated.div id="about-content" ref={refAbout} style={AboutAnimationStyle}>
+              <div id="text-about-content">
+                <h1 id="about-h1"> <span className="num-parallax">01.</span> About me</h1>
+                <p id="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque, id quia quidem perferendis est consequuntur quaerat adipisci eum et voluptatem vitae quis blanditiis nulla quisquam, sunt reiciendis nihil placeat.</p>
+              </div>
+              <img
+                data-main-image
+                src=""
+                alt="img of desert"
+                className="me-img"
+              />
+            </animated.div>
           </ParallaxLayer>
           <ParallaxLayer offset={2} speed={0.2}>
             <div id="content-3">
@@ -61,7 +60,29 @@ export default function Main() {
                     src=""
                     alt=""
                     className="proyect-img"
-                  ></img>
+                  />
+                </div>
+                <div className="info-card">
+                  <div className="tecnology-content">
+                    <div className="tecnology" id="tec1">React</div>
+                    <div className="tecnology" id="tec1">Node</div>
+                    <div className="tecnology" id="tec1">MongoDB</div>
+                    <div className="tecnology" id="tec1">Styled comp</div>
+                    <div className="tecnology" id="tec1">Sass</div>
+                  </div>
+                  <div className="text-content">
+                    <h3 className="title-proyect">Notes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card-proyect-content">
+                <div className="image-card">
+                  <img
+                    src=""
+                    alt=""
+                    className="proyect-img"
+                  />
                 </div>
                 <div className="info-card">
                   <div className="tecnology-content">
@@ -81,7 +102,7 @@ export default function Main() {
                     src=""
                     alt=""
                     className="proyect-img"
-                  ></img>
+                  />
                 </div>
                 <div className="info-card">
                   <div className="tecnology-content">
@@ -95,30 +116,11 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div className="card-proyect-content">
-                <div className="image-card">
-                  <img
-                    src=""
-                    alt=""
-                    className="proyect-img"
-                  ></img>
-                </div>
-                <div className="info-card">
-                  <div className="tecnology-content">
-                    <div className="tecnology" id="tec1">React</div>
-                    <div className="tecnology" id="tec1">Node</div>
-                    <div className="tecnology" id="tec1">Mongo</div>
-                  </div>
-                  <div className="text-content">
-                    <h3 className="title-proyect">Notes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
-                  </div>
-                </div>
-              </div>
+              {/* Agregar más contenido si es necesario */}
             </div>
           </ParallaxLayer>
         </Parallax>
       </div>
-    </main >
+    </main>
   );
 }
