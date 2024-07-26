@@ -65,6 +65,7 @@ html {
     top: 0;
     left: 0;
     overflow-y: hidden;
+    -moz-osx-font-smoothing: grayscale;
   }
   #content-2 {
     position: absolute;
@@ -73,15 +74,17 @@ html {
     top: 0;
     justify-content: center;
     display: flex;
+    letter-spacing: 0.00875em;
   }
   #content-3 {
     position: absolute;
-    background-color: black;
+    background-color: #f0f4f6;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.00875em;
   }
   #intro-content {
     height: fit-content;
@@ -108,16 +111,19 @@ html {
     color: white;
   }
   #about-content {
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: rgba(240, 248, 255, 0.312);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 1rem;
     color: white;
     font-family: var(--font-Poppins);
     display: flex;
     width: 50%;
     height: 50%;
-    margin-top: 5%;
+    margin: 4% auto;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.6);
+    -moz-osx-font-smoothing: grayscale;
   }
   #text-about-content {
     display: flex;
@@ -138,19 +144,27 @@ html {
   .card-proyect-content {
     width: 20%;
     height: 660px;
-    border: 1px solid white;
-    color: white;
     font-family: var(--font-Poppins);
-    margin-right: 30px;
+    margin-right: 40px;
     border-radius: 4px;
+    background-color: #ffffff;
+    color: #576274;
+    line-height: 1.625;
+    word-wrap: break-word;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    -webkit-box-shadow: 0 1px 26px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 26px 1px rgba(0, 0, 0, 0.1);
   }
   .info-card {
     margin: 33px 30px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
   }
   .image-card {
     width: 100%;
     height: 280px;
-    background-color: aliceblue;
+    background-color: #eeeeee;
   }
   .text-content {
     display: flex;
@@ -168,17 +182,26 @@ html {
   }
   .tecnology-content {
     display: flex;
-    flex-direction: row;
-    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .tecnology {
-    width: fit-content;
-    height: fit-content;
+    vertical-align: middle;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 100%;
     color: black;
+    vertical-align: middle;
     background-color: #4cc499;
-    border-radius: 3px;
-    padding: 3px 10px;
-    font-family: "Poppins";
+    border-radius: 2px;
+    padding: 0.1875rem 0.625rem;
+    font-family: Open Sans, "Poppins";
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 3px;
   }
 }
 
