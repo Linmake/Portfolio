@@ -6,6 +6,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "SFMonoBold";
+  src: url(/fonts/SF/SFMonoBold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Poppins";
   src: url(/fonts/Poppins/Poppins-Light.ttf) format("truetype");
   font-weight: normal;
@@ -40,7 +47,7 @@ html {
     margin-top: 12%;
     font-size: 3rem;
     color: white;
-    font-family: var(--font-SFMonoBold);
+    font-family: "SFMonoBold";
   }
   .animation,
   .animation_layer {
@@ -126,7 +133,7 @@ html {
     font-size: 18px;
     display: inline-block;
     width: fit-content;
-    font-family: var(--font-Poppins);
+    font-family: "Poppins";
     padding: 5px;
     letter-spacing: 0.8px;
     color: white;
@@ -137,7 +144,7 @@ html {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 1rem;
     color: white;
-    font-family: var(--font-Poppins);
+    font-family: "Poppins";
     display: flex;
     width: 50%;
     height: 50%;
@@ -165,7 +172,7 @@ html {
   .card-proyect-content {
     width: 20%;
     height: 660px;
-    font-family: var(--font-Poppins);
+    font-family: "Poppins";
     margin-right: 40px;
     border-radius: 4px;
     background-color: #ffffff;
