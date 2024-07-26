@@ -1,24 +1,3 @@
-@font-face {
-  font-family: "Poppins";
-  src: url(/fonts/Poppins-Light.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SFMonoBold";
-  src: url(../../public/fonts/SFMonoBold.otf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SFMonoRegular";
-  src: url(../../public/fonts/SFMonoRegular.otf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   margin: 0;
 }
@@ -40,7 +19,7 @@ html {
     margin-top: 12%;
     font-size: 3rem;
     color: white;
-    font-family: "SFMonoBold";
+    font-family: var(--font-SFMonoBold);
   }
   .animation,
   .animation_layer {
@@ -91,9 +70,9 @@ html {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    top: 0;
     justify-content: center;
     display: flex;
-    top: 0;
   }
   #content-3 {
     position: absolute;
@@ -107,7 +86,7 @@ html {
   #intro-content {
     height: fit-content;
     line-height: 15px;
-    margin-top: 10%;
+    margin-top: 11%;
   }
   #portImageCont {
     margin-top: 8%;
@@ -120,14 +99,13 @@ html {
       rgba(74, 47, 189, 0.5) 111.58%
     );
     border: 1px solid rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-    margin-bottom: 16px;
+    font-size: 18px;
     display: inline-block;
     width: fit-content;
-    font-family: "Poppins";
+    font-family: var(--font-Poppins);
     padding: 5px;
-    font-weight: 700;
     letter-spacing: 0.8px;
+    color: white;
   }
   #about-content {
     border: 1px solid white;
@@ -135,10 +113,11 @@ html {
     background-color: rgba(240, 248, 255, 0.312);
     padding: 1rem;
     color: white;
-    font-family: "Poppins";
+    font-family: var(--font-Poppins);
     display: flex;
     width: 50%;
     height: 50%;
+    margin-top: 5%;
   }
   #text-about-content {
     display: flex;
@@ -161,7 +140,7 @@ html {
     height: 660px;
     border: 1px solid white;
     color: white;
-    font-family: "Poppins";
+    font-family: var(--font-Poppins);
     margin-right: 30px;
     border-radius: 4px;
   }
@@ -181,11 +160,11 @@ html {
     margin: 0px 0px 10px;
     padding: 14px 0px 0px;
     font-size: 25px;
-    font-family: "Poppins", "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
   }
   .num-parallax {
     color: #64ffda;
-    font-family: "SFMonoRegular";
+    font-family: var(--font-SFMonoRegular);
   }
   .tecnology-content {
     display: flex;
@@ -196,9 +175,10 @@ html {
     width: fit-content;
     height: fit-content;
     color: black;
-    background-color: #64ffda;
+    background-color: #4cc499;
     border-radius: 3px;
     padding: 3px 10px;
+    font-family: "Poppins";
   }
 }
 
