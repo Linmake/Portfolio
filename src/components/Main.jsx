@@ -44,20 +44,26 @@ export default function Main() {
                 <h1 id="about-h1"> <span className="num-parallax">01.</span> About me</h1>
                 <p id="about-p">
                   I’m a passionate software developer who loves problem-solving and continuous learning. My journey into programming began with a high school project where I first encountered coding and was instantly hooked.
-
+                </p>
+                <p id="about-p">
                   In my professional career, I specialize in front-end development with React and Vue.js, as well as back-end development with Node.js.
-
+                </p>
+                <p id="about-p">
                   Outside of work, I enjoy building personal projects and staying on top of the latest tech trends.
+                </p>
 
+                <p id="about-p">
                   Feel free to explore my work and reach out if you’d like to collaborate or just chat about the latest in tech!
                 </p>
               </div>
-              <img
-                data-main-image
-                src=""
-                alt="img of desert"
-                className="me-img"
-              />
+              <div className="content-img">
+                <img
+                  data-main-image
+                  src="../../public/assets/me.webp"
+                  alt="img of desert"
+                  className="me-img"
+                />
+              </div>
             </animated.div>
           </ParallaxLayer>
           <ParallaxLayer offset={2} speed={0.2}>
@@ -88,6 +94,6 @@ export default function Main() {
           </ParallaxLayer>
         </Parallax>
       </div>
-    </main>
+    </main >
   );
 }
