@@ -84,47 +84,6 @@ export default function Main() {
                   </div>
                 </div>
               </div>
-              <div className="card-proyect-content">
-                <div className="image-card">
-                  <img
-                    src=""
-                    alt=""
-                    className="proyect-img"
-                  />
-                </div>
-                <div className="info-card">
-                  <div className="tecnology-content">
-                    <div className="tecnology" id="tec1">React</div>
-                    <div className="tecnology" id="tec1">Node</div>
-                    <div className="tecnology" id="tec1">Mongo</div>
-                  </div>
-                  <div className="text-content">
-                    <h3 className="title-proyect">Notes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card-proyect-content">
-                <div className="image-card">
-                  <img
-                    src=""
-                    alt=""
-                    className="proyect-img"
-                  />
-                </div>
-                <div className="info-card">
-                  <div className="tecnology-content">
-                    <div className="tecnology" id="tec1">React</div>
-                    <div className="tecnology" id="tec1">Node</div>
-                    <div className="tecnology" id="tec1">Mongo</div>
-                  </div>
-                  <div className="text-content">
-                    <h3 className="title-proyect">Notes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas eligendi animi. Corporis, facere ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quae aperiam obcaecati?</p>
-                  </div>
-                </div>
-              </div>
-              {/* Agregar más contenido si es necesario */}
             </div>
           </ParallaxLayer>
         </Parallax>
