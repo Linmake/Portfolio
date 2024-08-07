@@ -42,7 +42,15 @@ export default function Main() {
             <animated.div id="about-content" ref={refAbout} style={AboutAnimationStyle}>
               <div id="text-about-content">
                 <h1 id="about-h1"> <span className="num-parallax">01.</span> About me</h1>
-                <p id="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates neque, id quia quidem perferendis est consequuntur quaerat adipisci eum et voluptatem vitae quis blanditiis nulla quisquam, sunt reiciendis nihil placeat.</p>
+                <p id="about-p">
+                  I’m a passionate software developer who loves problem-solving and continuous learning. My journey into programming began with a high school project where I first encountered coding and was instantly hooked.
+
+                  In my professional career, I specialize in front-end development with React and Vue.js, as well as back-end development with Node.js.
+
+                  Outside of work, I enjoy building personal projects and staying on top of the latest tech trends.
+
+                  Feel free to explore my work and reach out if you’d like to collaborate or just chat about the latest in tech!
+                </p>
               </div>
               <img
                 data-main-image
