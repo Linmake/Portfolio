@@ -8,8 +8,8 @@
 * {
   box-sizing: inherit;
 }
+
 header {
-  background-image: url("/assets/banner-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: var(--nav-height);
@@ -29,12 +29,16 @@ header {
   z-index: 1000;
   top: 0;
   transition: background-color 0.3s ease;
+  background-color: transparent; /* Color por defecto */
 }
 
 header.scrolled {
-  background-image: none;
-  padding: 0px 0;
-  background-color: #121212c7;
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.8
+  ); /* Color con opacidad para el efecto de scroll */
 }
 
 nav {

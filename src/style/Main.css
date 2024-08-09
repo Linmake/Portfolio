@@ -306,7 +306,7 @@ main {
     margin: 3px;
   }
 }
-/* 
+
 @media (max-width: 480px) {
   .title-content {
     margin-top: 50%;
@@ -321,4 +321,4 @@ main {
   .subtitle {
     font-size: 2.5rem;
   }
-} */
+}
