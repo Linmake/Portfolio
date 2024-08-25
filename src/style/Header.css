@@ -10,8 +10,7 @@
 }
 
 header {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #0a192f;
   height: var(--nav-height);
   width: 100%;
   font-family: "SFMonoRegular";
@@ -19,26 +18,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: blur(20px);
   pointer-events: auto !important;
   user-select: auto !important;
-  unicode-bidi: isolate;
   padding-left: 50px;
   padding-right: 50px;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
-  top: 0;
-  transition: background-color 0.3s ease;
-  background-color: transparent; /* Color por defecto */
-}
-
-header.scrolled {
-  background-color: rgba(
-    51,
-    51,
-    51,
-    0.8
-  ); /* Color con opacidad para el efecto de scroll */
 }
 
 nav {

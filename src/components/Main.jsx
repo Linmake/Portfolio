@@ -7,18 +7,8 @@ import '../style/Main.css';
 import '../style/Header.css'
 
 function Header() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header className={scrolled ? 'scrolled' : ''}>
+    <header>
       <img src="/assets/NF.webp" className="logo" alt="logo" />
       <nav>
         <ol className="row-list">
@@ -73,7 +63,6 @@ export default function Main() {
                     </div>
                   </div>
                   <div id="portImageCont">
-                    <img id="astro" src="assets/header-img.svg" alt="" />
                   </div>
                 </div>
               </div>
